@@ -29,11 +29,11 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     HttpModule,
     AppRoutingModule,
     RecipesModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   providers: [ShoppingListService, DataStorageService, RecipeService, AuthService, AuthGuard, SharedModule],
   bootstrap: [AppComponent]
